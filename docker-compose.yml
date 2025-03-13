@@ -1,6 +1,6 @@
 version: v1
 services:
-  wolserver:
+  server:
     build:
       context: .
       dockerfile: Dockerfile
@@ -8,3 +8,5 @@ services:
       - MAC_ADDR='your mac address'
       - BROADCAST_IP_ADDR='broadcast ip'
     restart: always
+    ports:
+      - 8080:8080
