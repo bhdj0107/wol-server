@@ -4,10 +4,6 @@ from flask_restx import Api, Resource, Namespace
 
 app = Flask(__name__)
 api = Api(app)
-
-def environSetter(key, default):
-    try: return os.environ[key]
-    else: return default
     
 # Get Environment
 MAC_ADDR = os.environ['MAC_ADDR']
