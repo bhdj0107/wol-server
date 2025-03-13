@@ -1,0 +1,10 @@
+version: v1
+services:
+  wolserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MAC_ADDR='your mac address'
+      - BROADCAST_IP_ADDR='broadcast ip'
+    restart: always
